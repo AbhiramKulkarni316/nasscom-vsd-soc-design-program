@@ -1,4 +1,4 @@
-Day 1
+# Day 1
 Inception of open-source EDA, OpenLANE and Sky130 PDK
 
 ![lab 1 screenshot 1](https://github.com/user-attachments/assets/3b450bdf-2117-484b-9672-0cbb1b587db4)
@@ -18,7 +18,7 @@ percentage of DFF's = flop ratio x 100
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Day 2
+# Day 2
 Good floorplan vs bad floorplan and introduction to library cells
 
 invoke the OpenLANE flow using same steps in day 1 
@@ -30,15 +30,21 @@ Screenshot of contents of floorplan def
 ![lab 2 screenshot 2](https://github.com/user-attachments/assets/0196ef35-08e4-47c5-9229-79a024d001db)
 1 micron = 1000 unit distance
 
-Die width in unit distance == 660685 , Die width in microns == 660.685
+Die width in unit distance == 660685 , Hence Die width in microns == 660.685
 
-Die height in unit distance == 671405 , Die height in microns == 671.405
+Die height in unit distance == 671405 , Hence Die height in microns == 671.405
 
 Area = width x height = 660.685 x 671.405 = 443587.212425 microns
 
 
-![lab 2 screenshot 3](https://github.com/user-attachments/assets/18b2b3ac-24c3-4e7a-9808-479297aa1d06)
+
 ![lab 2 screenshot 4](https://github.com/user-attachments/assets/12028fd9-611b-457e-96ec-e4ff72c55729)
+
+open floorplan in magic using:-  $ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+
+
+![lab 2 screenshot 3](https://github.com/user-attachments/assets/18b2b3ac-24c3-4e7a-9808-479297aa1d06)
+
 ![lab 2 screenshot 5](https://github.com/user-attachments/assets/127e2306-5348-429d-9570-9cffec85c11b)
 ![lab 2 screenshot 6](https://github.com/user-attachments/assets/fb465419-f984-43a3-a616-87f9c20920f5)
 ![lab 2 screenshot 7 placement screenshot zoomed](https://github.com/user-attachments/assets/991c2be3-8f2d-43e3-9ce3-4f3c1b40962a)
