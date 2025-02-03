@@ -21,8 +21,22 @@ percentage of DFF's = flop ratio x 100
 Day 2
 Good floorplan vs bad floorplan and introduction to library cells
 
+invoke the OpenLANE flow using same steps in day 1 
+
+After that perform floorplan using run_floorplan
 ![lab 2 screenshot 1](https://github.com/user-attachments/assets/952e4ce0-4e05-4cdc-9fbd-66a9c15a6df7)
+
+Screenshot of contents of floorplan def
 ![lab 2 screenshot 2](https://github.com/user-attachments/assets/0196ef35-08e4-47c5-9229-79a024d001db)
+1 micron = 1000 unit distance
+
+Die width in unit distance == 660685 , Die width in microns == 660.685
+
+Die height in unit distance == 671405 , Die height in microns == 671.405
+
+Area = width x height = 660.685 x 671.405 = 443587.212425 microns
+
+
 ![lab 2 screenshot 3](https://github.com/user-attachments/assets/18b2b3ac-24c3-4e7a-9808-479297aa1d06)
 ![lab 2 screenshot 4](https://github.com/user-attachments/assets/12028fd9-611b-457e-96ec-e4ff72c55729)
 ![lab 2 screenshot 5](https://github.com/user-attachments/assets/127e2306-5348-429d-9570-9cffec85c11b)
