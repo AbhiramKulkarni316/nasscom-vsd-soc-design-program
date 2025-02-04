@@ -62,9 +62,19 @@ Design library cell using Magic Layout and ngspice characterization
 Clone custom inverter standard cell design from github repository
 ![lab 3 screenshot 1](https://github.com/user-attachments/assets/c6950da8-ff64-4735-adc4-d8db5936b6a4)
 ![lab 3 screenshot 2](https://github.com/user-attachments/assets/4b1d28ba-18e4-4a16-b73a-666f0c2995bf)
+
+Spice extraction of inverter in magic
+
+use the following commands
+
+extract all
+
+ext2spice cthresh 0 rthresh 0
+
+ext2spice
+
 ![lab 3 screenshot 3](https://github.com/user-attachments/assets/8fe68f1c-1d7e-4f47-9563-d49ccb0d3300)
 
-Spice extraction in magic tool
 ![lab 3 screenshot 4](https://github.com/user-attachments/assets/73746e9f-5028-4232-a585-f064d42fae55)
 Update values for ngspice
 
