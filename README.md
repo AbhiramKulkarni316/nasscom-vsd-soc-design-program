@@ -67,26 +67,44 @@ Clone custom inverter standard cell design from github repository
 Spice extraction in magic tool
 ![lab 3 screenshot 4](https://github.com/user-attachments/assets/73746e9f-5028-4232-a585-f064d42fae55)
 Update values for ngspice
-![lab 3 screenshot 5](https://github.com/user-attachments/assets/0887333b-e85e-4096-bd6b-c3b65f188e16)
 
-Command to directly load spice file for simulation to ngspice
+![lab 3 screenshot 6](https://github.com/user-attachments/assets/8c37a999-eb21-476f-bebd-4d52a7ee7bb7)
+
+Command to load spice file for simulation to ngspice
 
 ngspice sky130_inv.spice
 
 plot y vs time a
-![lab 3 screenshot 6](https://github.com/user-attachments/assets/8c37a999-eb21-476f-bebd-4d52a7ee7bb7)
-![lab 3 screenshot 7](https://github.com/user-attachments/assets/536e2525-3f47-440a-aa81-b473307974ff)
+
 ![lab 3 screenshot 8](https://github.com/user-attachments/assets/2c8868e5-e552-4bb7-9412-8c897e7393d6)
+
+Here we will calculate Rise time delay, Fall time delay and Propogation delay.
+![lab 3 screenshot 7](https://github.com/user-attachments/assets/536e2525-3f47-440a-aa81-b473307974ff)
+
 ![lab 3 screenshot 9](https://github.com/user-attachments/assets/14c0c19e-6ebf-4e99-92e3-77a321ea2818)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Day 4
+# Day 4
 Pre-layout timing analysis and importance of good clock tree
 
 ![lab 4 ss 1](https://github.com/user-attachments/assets/9b590a3d-b923-497f-8e23-14ea709130a5)
+
+Screenshot of tracks.info of sky130_fd_sc_hd
+
 ![lab 4 ss 2](https://github.com/user-attachments/assets/d95d936a-ad36-4bec-be32-b6652b3865a9)
+
+Get syntax for grid command: - 
+help grid
+
+Set grid values accordingly : - 
+grid 0.46um 0.34um 0.23um 0.17um
+
 ![lab 4 ss 3](https://github.com/user-attachments/assets/f61c9788-036a-4eca-9bee-ac0b588e3ca1)
+
+Here we define ports. Ports are required while we want to extract the lef file. When we extract the lef file these ports are defined as pins
 ![lab 4 ss 4](https://github.com/user-attachments/assets/e6f124c5-c277-4e22-930d-e6d04a59d028)
+
+
 ![lab 4 ss 5 updated ](https://github.com/user-attachments/assets/6de750d5-9f6a-4fe5-80d8-5d8aa4d94c5a)
 ![lab 4 ss 6](https://github.com/user-attachments/assets/2149a818-85a3-4de1-9962-c9b12c1703a8)
 ![lab 4 ss 7 lef file](https://github.com/user-attachments/assets/3102cf12-8385-49c3-8b3c-24bdfad583f5)
