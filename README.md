@@ -104,21 +104,55 @@ grid 0.46um 0.34um 0.23um 0.17um
 Here we define ports. Ports are required while we want to extract the lef file. When we extract the lef file these ports are defined as pins
 ![lab 4 ss 4](https://github.com/user-attachments/assets/e6f124c5-c277-4e22-930d-e6d04a59d028)
 
+Check for the file in vsdstdcelldesign folder
 
 ![lab 4 ss 5 updated ](https://github.com/user-attachments/assets/6de750d5-9f6a-4fe5-80d8-5d8aa4d94c5a)
+
+Create the LEF file
 ![lab 4 ss 6](https://github.com/user-attachments/assets/2149a818-85a3-4de1-9962-c9b12c1703a8)
+
+inspect the newly created sky130_inv.lef file 
 ![lab 4 ss 7 lef file](https://github.com/user-attachments/assets/3102cf12-8385-49c3-8b3c-24bdfad583f5)
+
+Edit the config.tcl file to include new LEF and LIB files
 ![lab 4 ss 8](https://github.com/user-attachments/assets/85f657cf-a60c-44c1-bfed-6fa8f288648a)
+
+Start OpenLANE and prepare the customised design for synthesis. This time during preparation, current file should be overwritten
+
+In my case the prep command was prep -design  picorv32a -tag 29-01_20-58 -overwrite 
+
+This error will occur. Change LIB_MIN to LIB_FASTEST and LIB_MAX to LIB_SLOWEST
 ![lab 4 ss 9 funny error 1](https://github.com/user-attachments/assets/f4f46df7-012c-40b6-9bcb-19395426f280)
+
+run_synthesis
 ![lab 4 ss 10](https://github.com/user-attachments/assets/79eaa72f-1a13-4d87-90a5-f13f0d3873b9)
 ![lab 4 ss 11](https://github.com/user-attachments/assets/6aab928e-a859-42c7-99e2-539679239300)
-![lab 4 ss 12](https://github.com/user-attachments/assets/74309bb7-6c1f-4404-9fb0-eb4bbbbbc834)
-![lab 4 ss 13](https://github.com/user-attachments/assets/0f2200e7-004d-482a-82df-55f445e5741d)
+
+run the following commands to run floorplan as regular method returns error
+
+init_floorplan
+
+place_io
+
+tap_decap_or
+
+Open the floorplan in magic
+
 ![lab 4 ss 14](https://github.com/user-attachments/assets/e79a910d-2fb7-4fa5-bee7-a78440fdc3cf)
+
+
+run_placement and then open in magic
+![lab 4 ss 13](https://github.com/user-attachments/assets/0f2200e7-004d-482a-82df-55f445e5741d)
+
 ![lab 4 ss 15](https://github.com/user-attachments/assets/1de632a0-687c-4aec-80b1-a0cbaddb8feb)
+
+run the clock tree analysis in openlane using run_cts
 ![lab 4 ss 16](https://github.com/user-attachments/assets/40889373-c737-492a-b39f-e453d135d5a8)
 ![lab 4 ss 17](https://github.com/user-attachments/assets/cd25d5bc-5dc5-455e-83fa-d4d1be388da4)
 ![lab 4 ss 18](https://github.com/user-attachments/assets/d4730a6f-11a8-4373-9eda-31c1b21ec839)
+
+Layout after CTS
+
 ![lab 4 ss 19](https://github.com/user-attachments/assets/c908cd03-7afc-453b-8da8-58d790da73fd)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
