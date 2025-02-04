@@ -45,6 +45,8 @@ open floorplan in magic using:-  $ magic -T /home/vsduser/Desktop/work/tools/ope
 
 ![lab 2 screenshot 3](https://github.com/user-attachments/assets/18b2b3ac-24c3-4e7a-9808-479297aa1d06)
 
+run placement using run_placement and review the placement in magic
+
 ![lab 2 screenshot 5](https://github.com/user-attachments/assets/127e2306-5348-429d-9570-9cffec85c11b)
 ![lab 2 screenshot 6](https://github.com/user-attachments/assets/fb465419-f984-43a3-a616-87f9c20920f5)
 ![lab 2 screenshot 7 placement screenshot zoomed](https://github.com/user-attachments/assets/991c2be3-8f2d-43e3-9ce3-4f3c1b40962a)
@@ -53,14 +55,25 @@ open floorplan in magic using:-  $ magic -T /home/vsduser/Desktop/work/tools/ope
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Day 3
+# Day 3
 Design library cell using Magic Layout and ngspice characterization
 
+
+Clone custom inverter standard cell design from github repository
 ![lab 3 screenshot 1](https://github.com/user-attachments/assets/c6950da8-ff64-4735-adc4-d8db5936b6a4)
 ![lab 3 screenshot 2](https://github.com/user-attachments/assets/4b1d28ba-18e4-4a16-b73a-666f0c2995bf)
 ![lab 3 screenshot 3](https://github.com/user-attachments/assets/8fe68f1c-1d7e-4f47-9563-d49ccb0d3300)
+
+Spice extraction in magic tool
 ![lab 3 screenshot 4](https://github.com/user-attachments/assets/73746e9f-5028-4232-a585-f064d42fae55)
+Update values for ngspice
 ![lab 3 screenshot 5](https://github.com/user-attachments/assets/0887333b-e85e-4096-bd6b-c3b65f188e16)
+
+Command to directly load spice file for simulation to ngspice
+
+ngspice sky130_inv.spice
+
+plot y vs time a
 ![lab 3 screenshot 6](https://github.com/user-attachments/assets/8c37a999-eb21-476f-bebd-4d52a7ee7bb7)
 ![lab 3 screenshot 7](https://github.com/user-attachments/assets/536e2525-3f47-440a-aa81-b473307974ff)
 ![lab 3 screenshot 8](https://github.com/user-attachments/assets/2c8868e5-e552-4bb7-9412-8c897e7393d6)
