@@ -156,7 +156,7 @@ Layout after CTS
 ![lab 4 ss 19](https://github.com/user-attachments/assets/c908cd03-7afc-453b-8da8-58d790da73fd)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Day 5
+# Day 5
 Final steps for RTL2GDS using tritonRoute and openSTA
 
 Generate PDN (Power Delivery Network) 
