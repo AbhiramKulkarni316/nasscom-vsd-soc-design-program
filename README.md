@@ -159,15 +159,33 @@ Layout after CTS
 Day 5
 Final steps for RTL2GDS using tritonRoute and openSTA
 
+Generate PDN (Power Delivery Network) 
+
 ![lab 5 ss 1](https://github.com/user-attachments/assets/5792c381-e246-42c8-addd-4eff8b96ebb4)
 ![lab 5 ss 2](https://github.com/user-attachments/assets/45a8f801-6281-45e0-b559-5a6c4dbc0c2b)
+
+open in magic tool
+
 ![lab 5 ss 3](https://github.com/user-attachments/assets/22498392-ede2-4569-884d-b9e87cdda4f5)
-![lab 5 ss 4](https://github.com/user-attachments/assets/c027eb8e-4a84-407d-b831-5a814e57882e)
+
+run_routing
+
 ![lab 5 ss 5](https://github.com/user-attachments/assets/b9bb09a1-a09d-42ae-8d17-56175f131ba6)
+![lab 5 ss 4](https://github.com/user-attachments/assets/c027eb8e-4a84-407d-b831-5a814e57882e)
+
+There are no drc and timing violations
+
+load routed def in magic in another terminal
 ![lab 5 ss 6 routed def](https://github.com/user-attachments/assets/4c8ac608-f2ce-4970-a9d9-4fabed96937f)
 ![lab 5 ss 7](https://github.com/user-attachments/assets/6ac9ebee-cca8-4f8e-9324-878eb0e1bcd0)
+
+Run Static Time Analysis
+
 ![lab 5 ss 8](https://github.com/user-attachments/assets/d3d13f99-f95e-4ae9-9fae-c2df28a23294)
 ![lab 5 ss 9](https://github.com/user-attachments/assets/362749ef-31c7-412c-b7ce-b44d74b0b0cf)
+
+Final Layout
+
 ![lab 5 ss 10](https://github.com/user-attachments/assets/de94e93c-d70d-4a9a-9d6a-eafb698c9ea1)
 
 
