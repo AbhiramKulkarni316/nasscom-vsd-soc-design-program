@@ -1,6 +1,14 @@
 # Day 1
 Inception of open-source EDA, OpenLANE and Sky130 PDK
 
+To invoke openLANE flow, type docker
+
+after that type ./flow.tcl -interactive
+
+% package require openlane 0.9
+
+% prep -design picorv32a
+
 ![lab 1 screenshot 1](https://github.com/user-attachments/assets/3b450bdf-2117-484b-9672-0cbb1b587db4)
 ![lab 1 screenshot 2](https://github.com/user-attachments/assets/37577795-142a-464f-b1f3-73469ba84a38)
 ![lab 1 screenshot 3](https://github.com/user-attachments/assets/def3ec2f-478e-4bd5-97b3-18445273bf87)
