@@ -137,7 +137,7 @@ Check for the file in vsdstdcelldesign folder
 
 ![lab 4 ss 5 updated ](https://github.com/user-attachments/assets/6de750d5-9f6a-4fe5-80d8-5d8aa4d94c5a)
 
-Create the LEF file: command is %LEF write
+Create the LEF file: command is %lef write
 ![lab 4 ss 6](https://github.com/user-attachments/assets/2149a818-85a3-4de1-9962-c9b12c1703a8)
 
 inspect the newly created sky130_inv.lef file 
