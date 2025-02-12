@@ -92,6 +92,8 @@ ext2spice
 
 ![lab 3 screenshot 3](https://github.com/user-attachments/assets/8fe68f1c-1d7e-4f47-9563-d49ccb0d3300)
 
+open the spice model file for analysis
+
 ![lab 3 screenshot 4](https://github.com/user-attachments/assets/73746e9f-5028-4232-a585-f064d42fae55)
 Update values for ngspice
 
