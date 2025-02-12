@@ -16,7 +16,6 @@ following this run_synthesis
 
 
 ![lab 1 screenshot 3](https://github.com/user-attachments/assets/def3ec2f-478e-4bd5-97b3-18445273bf87)
-![lab 1 screenshot 4](https://github.com/user-attachments/assets/5d3dc31a-8c51-4107-a130-66549c697a84)
 
 Flop ratio= Number of D Flip flops/ Total number of cells
 
