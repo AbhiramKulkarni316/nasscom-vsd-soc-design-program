@@ -71,8 +71,12 @@ Design library cell using Magic Layout and ngspice characterization
 
 
 Clone custom inverter standard cell design from github  https://github.com/nickson-jose/vsdstdcelldesign
+
 ![lab 3 screenshot 1](https://github.com/user-attachments/assets/c6950da8-ff64-4735-adc4-d8db5936b6a4)
 
+go to the vsdstdcelldesign directory, 
+
+open layout using magic -T sky130A.tech sky130_inv.mag &
 
 ![lab 3 screenshot 2](https://github.com/user-attachments/assets/4b1d28ba-18e4-4a16-b73a-666f0c2995bf)
 
