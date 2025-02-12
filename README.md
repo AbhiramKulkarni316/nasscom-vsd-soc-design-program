@@ -180,7 +180,32 @@ run the clock tree analysis in openlane using run_cts
 
 Post CTS Analysis
 
+Add the following commands 
+
+ read_lef /openLANE_flow/designs/picorv32a/runs/run1/tmp/merged.lef
+ 
+ read_def /openLANE_flow/designs/picorv32a/runs/run1/results/cts/picorv32a.cts.def
+ 
+ write_db pico_cts.db
+ 
+ read_db pico_cts.db
+ 
+ read_verilog /openLANE_flow/designs/picorv32a/runs/29-01_20-58/results/synthesis/picorv32a.synthesis_cts.v
+ 
+ read_liberty $::env(LIB_TYPICAL)
+ 
+ link_design picorv32a
+ 
+ read_sdc /openLANE_flow/designs/picorv32a/src/picorv32a.sdc
+ 
+ set_propagated_clock [all_clocks]
+ 
+ report_checks -path_delay min_max -fields {slew trans net cap input_pin} -format full_clock_expanded -digits 4
+
 ![lab 4 ss 17](https://github.com/user-attachments/assets/cd25d5bc-5dc5-455e-83fa-d4d1be388da4)
+
+set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
+
 ![lab 4 ss 18](https://github.com/user-attachments/assets/d4730a6f-11a8-4373-9eda-31c1b21ec839)
 
 Layout after CTS
