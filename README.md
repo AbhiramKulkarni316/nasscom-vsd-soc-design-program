@@ -241,6 +241,35 @@ Run Static Time Analysis
 ![lab 5 ss 8](https://github.com/user-attachments/assets/d3d13f99-f95e-4ae9-9fae-c2df28a23294)
 ![lab 5 ss 9](https://github.com/user-attachments/assets/362749ef-31c7-412c-b7ce-b44d74b0b0cf)
 
+perform the post-routing timing analysis using OpenSTA
+
+Add the following commands 
+
+ openroad
+
+ read_lef /openLANE_flow/designs/picorv32a/runs/29-01_20-58/tmp/merged.lef
+ 
+ read_def /openLANE_flow/designs/picorv32a/runs/29-01_20-58/results/cts/picorv32a.cts.def
+ 
+ write_db pico_cts.db
+ 
+ read_db pico_cts.db
+ 
+ read_verilog /openLANE_flow/designs/picorv32a/runs/29-01_20-58/results/synthesis/picorv32a.synthesis_cts.v
+ 
+ read_liberty $::env(LIB_TYPICAL)
+ 
+ link_design picorv32a
+ 
+ read_sdc /openLANE_flow/designs/picorv32a/src/picorv32a.sdc
+ 
+ set_propagated_clock [all_clocks]
+ 
+ report_checks -path_delay min_max -fields {slew trans net cap input_pin} -format full_clock_expanded -digits 4
+
+ exit
+ 
+
 Final Layout
 
 ![lab 5 ss 10](https://github.com/user-attachments/assets/de94e93c-d70d-4a9a-9d6a-eafb698c9ea1)
