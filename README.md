@@ -182,9 +182,9 @@ Post CTS Analysis
 
 Add the following commands 
 
- read_lef /openLANE_flow/designs/picorv32a/runs/run1/tmp/merged.lef
+ read_lef /openLANE_flow/designs/picorv32a/runs/29-01_20-58/tmp/merged.lef
  
- read_def /openLANE_flow/designs/picorv32a/runs/run1/results/cts/picorv32a.cts.def
+ read_def /openLANE_flow/designs/picorv32a/runs/29-01_20-58/results/cts/picorv32a.cts.def
  
  write_db pico_cts.db
  
